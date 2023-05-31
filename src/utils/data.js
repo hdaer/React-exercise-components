@@ -9,4 +9,3 @@ export const coffee = {
     imgUrl: 'https://media.wincacademy.nl/coffee.jpeg',
     alt: 'Picture of a cup of coffee',
 };
-
