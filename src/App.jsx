@@ -8,15 +8,23 @@ export const App = () => {
 
 	const greeting = "Welcome to our cafe!";
 
-	const userDrink = tea;
+	const userDrink = undefined;
 
 	return (
 		<div className="App">
 
-			<h1>{greeting}</h1>
-			<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name}/>
-			<DrinkChoice drink={userDrink} />
 			
+			
+			{userDrink ? (
+				
+				<DrinkChoice drink={userDrink} />
+				
+			) : (
+				<>
+					<h1>{greeting}</h1>
+					<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name}/>
+				</>
+			)}
 		</div>
 	);
 };
