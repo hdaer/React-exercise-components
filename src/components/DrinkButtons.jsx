@@ -1,15 +1,16 @@
-import './DrinkButtons.css';
-import {Button} from './ui/Button.jsx';
+import "./DrinkButtons.css";
+import { Button } from "./ui/Button.jsx";
 
 export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
-    return (
-        <>
-        <h3>Would you like { drinkOne } or { drinkTwo }</h3>
-        <div className="button-group">
+  return (
+    <>
+      <h3>
+        Would you like {drinkOne} or {drinkTwo}
+      </h3>
+      <div className="button-group">
         <Button text={drinkOne} />
         <Button text={drinkTwo} />
-        
-        </div>
-        </>
-    );
+      </div>
+    </>
+  );
 };
