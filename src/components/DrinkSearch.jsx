@@ -1,6 +1,8 @@
 import "./DrinkSearch.css";
 import { TextInput } from "./ui/TextInput.jsx";
 import { useState } from "react";
+import { availableDrinks } from "../utils/data.js";
+import { DrinkList } from "./DrinkList.jsx";
 
 export const DrinkSearch = () => {
   const [searchField, setSearchField] = useState("test drink");
@@ -10,6 +12,7 @@ export const DrinkSearch = () => {
       <label>Search for your drink here:</label>
       <TextInput />
       <div>{searchField}</div>
+      <DrinkList drinks={availableDrinks} />
     </div>
   );
 };

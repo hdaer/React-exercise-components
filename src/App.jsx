@@ -1,9 +1,8 @@
 import "./App.css";
-import { DrinkButtons } from "./components/DrinkButtons";
-import { tea, coffee } from "./utils/data.js";
+import { useState } from "react";
 import { DrinkChoice } from "./components/DrinkChoice";
 import { DrinkSearch } from "./components/DrinkSearch";
-import { useState } from "react";
+import { DrinkItem } from "./components/DrinkItem";
 
 export const App = () => {
   const greeting = "Welcome to our cafe!";
@@ -17,7 +16,6 @@ export const App = () => {
       ) : (
         <>
           <h1>{greeting}</h1>
-          <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
           <DrinkSearch />
         </>
       )}
