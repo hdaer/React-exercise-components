@@ -4,7 +4,7 @@ import { useState } from "react";
 import { availableDrinks } from "../utils/data.js";
 import { DrinkList } from "./DrinkList.jsx";
 
-export const DrinkSearch = () => {
+export const DrinkSearch = ({ clickFn }) => {
   const [searchField, setSearchField] = useState("test drink");
 
   return (
@@ -12,7 +12,7 @@ export const DrinkSearch = () => {
       <label>Search for your drink here:</label>
       <TextInput />
       <div>{searchField}</div>
-      <DrinkList drinks={availableDrinks} />
+      <DrinkList drinks={availableDrinks} clickFn={clickFn} />
     </div>
   );
 };

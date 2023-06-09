@@ -2,7 +2,6 @@ import "./App.css";
 import { useState } from "react";
 import { DrinkChoice } from "./components/DrinkChoice";
 import { DrinkSearch } from "./components/DrinkSearch";
-import { DrinkItem } from "./components/DrinkItem";
 
 export const App = () => {
   const greeting = "Welcome to our cafe!";
@@ -12,11 +11,11 @@ export const App = () => {
   return (
     <div className="App">
       {userDrink ? (
-        <DrinkChoice drink={userDrink} />
+        <DrinkChoice drink={userDrink} clickFn={setUserDrink}/>
       ) : (
         <>
           <h1>{greeting}</h1>
-          <DrinkSearch />
+          <DrinkSearch clickFn={setUserDrink} />
         </>
       )}
     </div>
