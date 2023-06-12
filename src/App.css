@@ -1,8 +1,11 @@
 .App {
-  background-color: #433e48;
+  background-color: #c4dfdf;
   display: flex;
   flex-direction: column;
   width: 75vw;
+  height: 90vh;
   justify-content: center;
   align-items: center;
+  font: bold 15px Arial, Helvetica;
+  color: #f266ab;
 }

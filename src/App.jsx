@@ -11,10 +11,10 @@ export const App = () => {
   return (
     <div className="App">
       {userDrink ? (
-        <DrinkChoice drink={userDrink} clickFn={setUserDrink}/>
+        <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
       ) : (
         <>
-          <h1>{greeting}</h1>
+          <h2>{greeting}</h2>
           <DrinkSearch clickFn={setUserDrink} />
         </>
       )}

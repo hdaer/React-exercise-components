@@ -1,8 +1,9 @@
-.button {
-  background-color: #abdcdf;
+.Button {
+  background-color: white;
   font: bold 20px Arial, Helvetica;
-  color: red;
+  color: black;
   border-radius: 10px;
-  border: none;
+  
   padding: 1rem;
+  margin: 1rem 0;
 }

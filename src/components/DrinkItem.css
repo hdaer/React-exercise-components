@@ -2,4 +2,9 @@
   display: flex;
   justify-content: center;
   column-gap: 1rem;
+  background-color: #f8f6f4;
+  /* border: solid 2px blue; */
+  font: bold 15px Arial, Helvetica;
+  color: black;
+  margin: 0.3rem;
 }
