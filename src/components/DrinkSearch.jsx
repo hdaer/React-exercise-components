@@ -1,5 +1,4 @@
-// import "./DrinkSearch.css";
-import { Flex } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 import { TextInput } from "./ui/TextInput.jsx";
 import { useState } from "react";
 import { availableDrinks } from "../utils/data.js";
@@ -26,7 +25,7 @@ export const DrinkSearch = ({ clickFn }) => {
       color={"#f266ab"}
     >
       <TextInput changeFn={handleChange} width={200} marginBottom={8} />
-      <div>{searchField}</div>
+
       <DrinkList drinks={matchedDrinks} clickFn={clickFn} />
     </Flex>
   );

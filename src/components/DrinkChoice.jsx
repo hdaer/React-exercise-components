@@ -39,12 +39,21 @@ export const DrinkChoice = ({ drink, clickFn }) => {
         </ButtonGroup>
       </Flex>
 
-      <Modal isOpen={isOpen} onClose={onClose} as="b">
+      <Modal isOpen={isOpen} onClose={onClose} as="b" size={["full", "md"]}>
         <ModalOverlay />
-        <ModalContent>
+
+        <ModalContent border="2px solid red">
           <ModalHeader>Confirm your order</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+
+          <ModalBody
+            height={("full", "fit-content")}
+            display={"flex"}
+            justifyContent="center"
+            alignItems={["center", "flex-start"]}
+            border="2px solid red"
+            flexDir={"column"}
+          >
             <Text color="#f266ab" as="b">
               1x {drink.name}
             </Text>

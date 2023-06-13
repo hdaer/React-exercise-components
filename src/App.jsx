@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <Flex
       flexDir={"column"}
-      w={"50vw"}
+      w={"75vw"}
       h={"90vh"}
       backgroundColor={"#c4dfdf"}
       justifyContent={"center"}
