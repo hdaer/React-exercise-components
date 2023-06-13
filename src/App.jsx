@@ -1,4 +1,4 @@
-import "./App.css";
+import { Heading, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import { DrinkChoice } from "./components/DrinkChoice";
 import { DrinkSearch } from "./components/DrinkSearch";
@@ -9,15 +9,25 @@ export const App = () => {
   const [userDrink, setUserDrink] = useState();
 
   return (
-    <div className="App">
+    <Flex
+      flexDir={"column"}
+      w={"50vw"}
+      h={"90vh"}
+      backgroundColor={"#c4dfdf"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      borderRadius={"5%"}
+    >
       {userDrink ? (
         <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
       ) : (
         <>
-          <h2>{greeting}</h2>
+          <Heading marginBottom={8} fontSize={"3xl"} color={"blue.400"}>
+            {greeting}
+          </Heading>
           <DrinkSearch clickFn={setUserDrink} />
         </>
       )}
-    </div>
+    </Flex>
   );
 };

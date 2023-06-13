@@ -1,14 +1,20 @@
-import "./TextInput.css";
+import { Input, InputGroup, InputLeftAddon } from "@chakra-ui/react";
 
-export const TextInput = ({ changeFn }) => {
+export const TextInput = ({ changeFn, ...props }) => {
   return (
     <>
-      <input
-        className="text-input"
-        type="search"
-        placeholder="type here..."
-        onChange={changeFn}
-      />
+      <InputGroup>
+        <InputLeftAddon color={"#FA7070"}>Search Drink</InputLeftAddon>
+        <Input
+          variant="filled"
+          type="search"
+          placeholder="type here..."
+          size="md"
+          marginBottom={8}
+          onChange={changeFn}
+          {...props}
+        />
+      </InputGroup>
     </>
   );
 };

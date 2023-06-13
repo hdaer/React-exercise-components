@@ -1,4 +1,4 @@
-import "./DrinkList.css";
+import { Flex } from "@chakra-ui/react";
 import { DrinkItem } from "./DrinkItem";
 
 export const DrinkList = ({ drinks, clickFn }) => {
@@ -6,5 +6,9 @@ export const DrinkList = ({ drinks, clickFn }) => {
     <DrinkItem key={drink.id} drink={drink} clickFn={clickFn} />
   ));
 
-  return <ul className="drink-list">{drinkListItems}</ul>;
+  return (
+    <Flex>
+      <ul>{drinkListItems}</ul>
+    </Flex>
+  );
 };

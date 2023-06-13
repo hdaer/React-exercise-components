@@ -1,9 +1,0 @@
-.drink-search {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font: bold 15px Arial, Helvetica;
-  color: #f266ab;
-  /* border: solid 2px red; */
-}
